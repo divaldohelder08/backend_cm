@@ -1,0 +1,20 @@
+{
+  "name": "@backend-comercial/eslint-config",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": ["config/prettier/*"],
+  "files": [
+    "library.js",
+    "next.js",
+    "node.js"
+  ],
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
+    "eslint-plugin-simple-import-sort": "^12.0.0",
+    "@backend-comercial/prettier": "workspace:*"
+  },
+  "eslintConfig": {
+    "prettier": "@backend-comercial/prettier",
+    "extends": ["./library.js"]
+  }
+}
